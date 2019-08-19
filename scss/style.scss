@@ -1,0 +1,104 @@
+@mixin font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+@mixin font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0;
+}
+.conteiner {
+    color: white;
+    height: 100vh;
+    background: url('../img/model-1.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .intro {
+        width: 70vw;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: center;
+
+        &__title {
+            @include font-roboto;
+            font-weight: 900;
+            font-size: 72px;
+            
+        }
+        
+        &__descript {
+            @include font-playfair;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .btn_intro {
+            @include font-roboto;
+            display: block;
+            font-weight: 300;
+            font-size: 16px;
+            border: 1px solid white;
+            background: none;
+           
+            padding: 30px 60px;
+            margin: 7vh 0vh 0vh;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+
+        .btn_intro:hover {
+            background-color: white;
+            a {
+                color: black;
+            }
+        }
+    }
+
+    .cellar__language {
+        width: 70vw;
+        display: flex;
+        flex-shrink: 10;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        .cellar__language__1 {
+            text-decoration: none;
+            color: white;
+            @include font-playfair;
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: 3vh;
+        }
+    }
+}
+.conteiner-contact__common {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include font-playfair;
+    font-weight: 400;
+    font-size: 18px;
+}
+.conteiner-works {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    @include font-playfair;
+    font-weight: 400;
+    font-size: 18px;
+}

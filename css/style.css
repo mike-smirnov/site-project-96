@@ -1,0 +1,79 @@
+body {
+  margin: 0; }
+
+.conteiner {
+  color: white;
+  height: 100vh;
+  background: url("../img/model-1.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .conteiner .intro {
+    width: 70vw;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center; }
+    .conteiner .intro__title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      font-size: 72px; }
+    .conteiner .intro__descript {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: 18px; }
+    .conteiner .intro a {
+      text-decoration: none;
+      color: white; }
+    .conteiner .intro .btn_intro {
+      font-family: 'Roboto', sans-serif;
+      display: block;
+      font-weight: 300;
+      font-size: 16px;
+      border: 1px solid white;
+      background: none;
+      padding: 30px 60px;
+      margin: 7vh 0vh 0vh;
+      border-radius: 3px;
+      text-decoration: none; }
+    .conteiner .intro .btn_intro:hover {
+      background-color: white; }
+      .conteiner .intro .btn_intro:hover a {
+        color: black; }
+  .conteiner .cellar__language {
+    width: 70vw;
+    display: flex;
+    flex-shrink: 10;
+    flex-direction: column;
+    justify-content: flex-end; }
+    .conteiner .cellar__language .cellar__language__1 {
+      text-decoration: none;
+      color: white;
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 3vh; }
+
+.conteiner-contact__common {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 18px; }
+
+.conteiner-works {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 18px; }
